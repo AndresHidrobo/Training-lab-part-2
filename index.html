@@ -26,15 +26,15 @@
 
                 <div class="col-md-3">
                     <label class="form-label small fw-bold">Select your role</label>
-                    <select id="task-priority" class="form-select">
-                        <option value="Vst">Visitor</option>
-                        <option value="Cdr">Coder</option>
-                        <option value="Ttr">Tutor</option>
+                    <select id="role-Selected" class="form-select">
+                        <option value="visitor">Visitor</option>
+                        <option value="coder">Coder</option>
+                        <option value="tutor">Tutor</option>
                     </select>
                 </div>
 
                 <div class="col-md-6">
-                    <label class="form-label small fw-bold">Hours available today</label>
+                    <label class="form-label small fw-bold">Hours available today (1-12)</label>
                     <input type="number" id="user_time" class="form-control" required>
                 </div>
 
@@ -42,7 +42,7 @@
                     <label class="form-label small fw-bold">Do you accept the lab rules?</label>
                     <br>
                     <input type="checkbox" id="rules" required>
-                    <label for="terms">I accept the rules</label>
+                    <label>I accept the rules</label>
                 </div>
 
                 <div class="col-md-3 text-end">
@@ -51,10 +51,13 @@
                     </button>
                 </div>
             </form>
+            <section class="container main-container mt-5" style="border:none; background:transparent; box-shadow:none;" id="area_result">
+                
+            </section>
         </div>
 
     </div>
-    <script src=""></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
