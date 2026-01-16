@@ -1,3 +1,17 @@
+const useradd = document.getElementById('form');
+useradd.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Collect user information
+    const fullName = document.getElementById('user_name').value;
+    const ageInput = document.getElementById('user_age').value;
+    const roleInput = document.getElementById('task-priority').value;
+    const hoursInput = document.getElementById('user_time').value;
+
+
+
+});
+
 // Function to validate if user is an adult
 function isAdult(age) {
     return age >= 18;
@@ -83,12 +97,6 @@ function makeDecision(user, riskScore) {
 // Main execution
 console.log('=== TRAINING LAB CHECK-IN SYSTEM ===\n');
 
-// Collect user information
-const fullName = prompt('Enter your full name:');
-const ageInput = prompt('Enter your age:');
-const roleInput = prompt('Enter your role (Coder / Tutor / Visitor):');
-const rulesInput = prompt('Do you accept the lab rules? (yes / no):');
-const hoursInput = prompt('How many hours are you available today? (1-12):');
 
 // Data modeling - create user object
 const user = {

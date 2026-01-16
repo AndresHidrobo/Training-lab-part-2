@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Training lab</title>
+    <title>Training lab 2</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <script src="app.js"></script>
+    <div class="container main-container mt-5">
+        <!-- Formulario (Estilo Tarjeta) -->
+        <div class="task-card mb-4">
+            <form id="form" class="row g-3 align-items-end">
+                <div class="col-md-6">
+                    <label class="form-label small fw-bold">Enter your full name</label>
+                    <input type="text" id="user_name" class="form-control" placeholder="Example: Pepito Perez" required>
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label small fw-bold">Your age</label>
+                    <input type="number" id="user_age" class="form-control" required>
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label small fw-bold">Select your role</label>
+                    <select id="task-priority" class="form-select">
+                        <option value="Vst">Visitor</option>
+                        <option value="Cdr">Coder</option>
+                        <option value="Ttr">Tutor</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label small fw-bold">Hours available today</label>
+                    <input type="number" id="user_time" class="form-control" required>
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label small fw-bold">Do you accept the lab rules?</label>
+                    <br>
+                    <input type="checkbox" id="rules" required>
+                    <label for="terms">I accept the rules</label>
+                </div>
+
+                <div class="col-md-3 text-end">
+                    <button style="border: 1px black solid;" type="submit" class="btn btn-add">
+                        Check-in
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src=""></script>
 </body>
+
 </html>
